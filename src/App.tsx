@@ -1,10 +1,8 @@
-import SearchBar from './components/SearchBar';
+import Search from './pages/Search';
 
 const App: React.FC= () => {
   return (
-    <>
-    <SearchBar/>
-    </>
+    <Search/>
   )
 }
 
