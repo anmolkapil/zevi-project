@@ -6,13 +6,9 @@ import formalSuit from '../assets/white formal suit.jpeg';
 import patternDress from '../assets/pattern dresses.jpeg';
 import leatherShirt from '../assets/leather shirt dress.jpeg';
 
-interface SearchSuggestionsProps {
-  searching: boolean
-}
-
-const SearchSuggestions:React.FC<SearchSuggestionsProps> = ({searching}) => {
-  return searching ? (
-    <div className='mx-auto my-3 p-8 bg-white rounded-md drop-shadow-2xl'>
+const SearchSuggestions:React.FC = () => {
+  return (
+    <div className='mx-auto my-3 p-8 ease-in duration-300 bg-white rounded-md drop-shadow-2xl'>
       <h2 className='font-medium text-xl mb-4'>Latest Trends</h2>
       <div className='flex gap-6'>
       <TrendProduct productImage={puffedSleeve} productName='Shirt with puffed sleeves'/>
@@ -31,7 +27,7 @@ const SearchSuggestions:React.FC<SearchSuggestionsProps> = ({searching}) => {
       </ul>
 
     </div>
-  ) : null;
+  )
 }
 
 export default SearchSuggestions;

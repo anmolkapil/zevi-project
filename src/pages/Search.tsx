@@ -11,8 +11,8 @@ const Search: React.FC = () => {
     <div style={{backgroundImage: `url(${backgroundImage})`}} className='h-screen bg-cover'>
       <Header/>
       <div className='flex flex-col'>
-      <SearchBar setSearching={setSearching}/>
-      <SearchSuggestions searching={searching}/>
+        <SearchBar setSearching={setSearching}/>
+        {searching && <SearchSuggestions/>}
       </div>
     
     </div>
