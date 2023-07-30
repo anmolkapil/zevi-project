@@ -6,8 +6,8 @@ interface TrendProductProps {
 const TrendProduct: React.FC<TrendProductProps> = ({productImage, productName}) => {
   return (
     <figure>
-    <img className='rounded-[4px] w-[165px]' src={productImage} alt={productName}/>
-    <figcaption className='mt-[14px] leading-none font-light text-sm'>{productName}</figcaption>
+    <img className='rounded-md w-[165px] h-[220px] object-cover' src={productImage} alt={productName}/>
+    <figcaption className='mt-3 leading-none font-light text-sm'>{productName}</figcaption>
   </figure>
   )
 }

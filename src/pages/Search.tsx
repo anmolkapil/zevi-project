@@ -9,8 +9,11 @@ const Search: React.FC = () => {
   return (
     <div style={{backgroundImage: `url(${backgroundImage})`}} className='h-screen bg-cover'>
       <Header/>
+      <div className='flex flex-col'>
       <SearchBar />
       <SearchSuggestions/>
+      </div>
+    
     </div>
   )
 
