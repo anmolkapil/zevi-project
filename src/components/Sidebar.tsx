@@ -3,7 +3,7 @@ import Rating from '@mui/material/Rating';
 
 const Sidebar:React.FC = () =>{
   return (
-    <div className='divide-y -mt-3'>
+    <div className='divide-y -mt-3 md:w-[175px] lg:w-[270px]'>
       <Filter filterName='Brand'>
       <span>Mango</span>
       <span>H&M</span>
