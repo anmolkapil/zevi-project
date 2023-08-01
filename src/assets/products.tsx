@@ -1,7 +1,17 @@
-[
+import roundNeckTee from './round neck tee.jpeg';
+import highWaistTrouser from './high waist trousers.jpeg';
+import highNeckPullover from './high neck pullover.jpeg'
+import satinJumpsuit from './satin jumpsuit.jpeg';
+import offShoulderTop from './off shoulder top.jpeg';
+import puffedSleevesShirt from './puffed sleeves.jpeg'
+import whiteOvercoat from './white overcoat.jpeg';
+import linenJumpsuit from './linen jumpsuit.jpeg';
+import leatherShirtDress from './leather shirt dress.jpeg';
+
+const products = [
   {
     "productName": "Round neck cotton tee",
-    "productImage": "/src/assets/round neck tee.jpeg",
+    "productImage": roundNeckTee,
     "price": 599,
     "discountedPrice": 549,
     "stars": 5,
@@ -9,7 +19,7 @@
   },
   {
     "productName": "High waist trousers",
-    "productImage": "/src/assets/high waist trousers.jpeg",
+    "productImage": highWaistTrouser,
     "price": 999,
     "discountedPrice": 749,
     "stars": 4,
@@ -17,7 +27,7 @@
   },
   {
     "productName": "High neck pullover",
-    "productImage": "/src/assets/high neck pullover.jpeg",
+    "productImage": highNeckPullover,
     "price": 650,
     "discountedPrice": 549,
     "stars": 4,
@@ -25,7 +35,7 @@
   },
   {
     "productName": "Satin jumpsuit",
-    "productImage": "/src/assets/satin jumpsuit.jpeg",
+    "productImage": satinJumpsuit,
     "price": 599,
     "discountedPrice": 549,
     "stars": 4.5,
@@ -33,7 +43,7 @@
   },
   {
     "productName": "Off shoulders top",
-    "productImage": "/src/assets/off shoulder top.jpeg",
+    "productImage": offShoulderTop,
     "price": 599,
     "discountedPrice": 549,
     "stars": 4.5,
@@ -41,7 +51,7 @@
   },
   {
     "productName": "Puffed sleeves shirt",
-    "productImage": "/src/assets/puffed sleeves.jpeg",
+    "productImage": puffedSleevesShirt,
     "price": 599,
     "discountedPrice": 549,
     "stars": 4.5,
@@ -49,7 +59,7 @@
   },
   {
     "productName": "White overcoat",
-    "productImage": "/src/assets/white overcoat.jpeg",
+    "productImage": whiteOvercoat,
     "price": 599,
     "discountedPrice": 549,
     "stars": 4.5,
@@ -57,7 +67,7 @@
   },
   {
     "productName": "Linen jumpsuit",
-    "productImage": "/src/assets/linen jumpsuit.jpeg",
+    "productImage": linenJumpsuit,
     "price": 599,
     "discountedPrice": 549,
     "stars": 4.5,
@@ -65,10 +75,12 @@
   },
   {
     "productName": "Leather shirt dress",
-    "productImage": "/src/assets/leather shirt dress.jpeg",
+    "productImage": leatherShirtDress,
     "price": 599,
     "discountedPrice": 549,
     "stars": 4.5,
     "ratingCount": 120
   }
-]
+];
+
+export default products;

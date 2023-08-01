@@ -1,20 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Product from '../components/Product';
 import { useNavigate } from 'react-router-dom';
+import products from '../assets/products';
 
 import searchIcon from '../assets/search.png';
 
-interface ProductData {
-  productName: string;
-  productImage: string;
-  price: number;
-  discountedPrice: number;
-  stars: number;
-  ratingCount: number;
-}
 
 const SearchResult:React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -30,21 +23,7 @@ const SearchResult:React.FC = () => {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => { 
     setSearchQuery(event.target.value);
   };
-  const [Products, setProducts] = useState<ProductData[]>([]);
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch('/products.json');
-        const data = await response.json();
-        setProducts(data);
-      } catch (error) {
-        console.error('Error fetching products data:', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
   return (
     <>
     <Header/>
@@ -72,7 +51,7 @@ const SearchResult:React.FC = () => {
     </div>
     
     <div className='w-full grid grid-cols-2 justify-center md:grid-cols-3 lg:grid-cols-4 gap-[40px]'>
-    {Products.map((product, index) => (
+    {products.map((product, index) => (
         <Product
           key={index}
           productImage={product.productImage}
