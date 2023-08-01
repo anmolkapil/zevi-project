@@ -4,6 +4,7 @@ import SearchSuggestions from '../components/SearchSuggestions';
 import backgroundImage from '../assets/background.jpeg';
 import { useState } from 'react';
 
+
 const Search: React.FC = () => {
   const [searching, setSearching] = useState<boolean>(false);
 
