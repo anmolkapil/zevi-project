@@ -14,13 +14,13 @@ interface ProductProps {
 }
 
 const Product:React.FC<ProductProps> = ({productImage, productName, price, discountedPrice, stars, ratingCount}) => {
-  const [wishlist, setWishlist] = useState<boolean>(true);
+  const [wishlist, setWishlist] = useState<boolean>(false);
   const toggleWishlist = () =>{
       setWishlist(!wishlist);
   }
 return (
   
-  <div className='w-[240px] relative'>
+  <div className='relative select-none cursor-pointer'>
     <div className='absolute z-10 right-2 top-2'>
     {wishlist ? (
         <FavoriteIcon onClick={toggleWishlist} sx={{ color: 'red'}}/>
@@ -29,8 +29,8 @@ return (
       )}
     </div>
 
-    <div className='relative group'>
-    <img src={productImage} alt={productName}/>
+    <div className='relative group rounded-sm overflow-hidden'>
+    <img className='w-[240px] h-[325px] object-cover' src={productImage} alt={productName}/>
    
     <div className='absolute invisible group-hover:visible bottom-0 left-0 right-0 bg-[rgba(109,132,255,0.7)] text-white font-medium text-xl text-center py-2'>View Product</div>
     </div>

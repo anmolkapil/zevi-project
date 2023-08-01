@@ -1,0 +1,74 @@
+[
+  {
+    "productName": "Round neck cotton tee",
+    "productImage": "/src/assets/round neck tee.jpeg",
+    "price": 599,
+    "discountedPrice": 549,
+    "stars": 5,
+    "ratingCount": 120
+  },
+  {
+    "productName": "High waist trousers",
+    "productImage": "/src/assets/high waist trousers.jpeg",
+    "price": 999,
+    "discountedPrice": 749,
+    "stars": 4,
+    "ratingCount": 210
+  },
+  {
+    "productName": "High neck pullover",
+    "productImage": "/src/assets/high neck pullover.jpeg",
+    "price": 650,
+    "discountedPrice": 549,
+    "stars": 4,
+    "ratingCount": 120
+  },
+  {
+    "productName": "Satin jumpsuit",
+    "productImage": "/src/assets/satin jumpsuit.jpeg",
+    "price": 599,
+    "discountedPrice": 549,
+    "stars": 4.5,
+    "ratingCount": 120
+  },
+  {
+    "productName": "Off shoulders top",
+    "productImage": "/src/assets/off shoulder top.jpeg",
+    "price": 599,
+    "discountedPrice": 549,
+    "stars": 4.5,
+    "ratingCount": 120
+  },
+  {
+    "productName": "Puffed sleeves shirt",
+    "productImage": "/src/assets/puffed sleeves.jpeg",
+    "price": 599,
+    "discountedPrice": 549,
+    "stars": 4.5,
+    "ratingCount": 120
+  },
+  {
+    "productName": "White overcoat",
+    "productImage": "/src/assets/white overcoat.jpeg",
+    "price": 599,
+    "discountedPrice": 549,
+    "stars": 4.5,
+    "ratingCount": 120
+  },
+  {
+    "productName": "Linen jumpsuit",
+    "productImage": "/src/assets/linen jumpsuit.jpeg",
+    "price": 599,
+    "discountedPrice": 549,
+    "stars": 4.5,
+    "ratingCount": 120
+  },
+  {
+    "productName": "Leather shirt dress",
+    "productImage": "/src/assets/leather shirt dress.jpeg",
+    "price": 599,
+    "discountedPrice": 549,
+    "stars": 4.5,
+    "ratingCount": 120
+  }
+]
