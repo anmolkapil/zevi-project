@@ -10,7 +10,7 @@ const SearchSuggestions:React.FC = () => {
   return (
     <div className='mx-auto my-3 p-8 bg-white rounded-md drop-shadow-2xl'>
       <h2 className='font-medium text-xl mb-4'>Latest Trends</h2>
-      <div className='flex gap-6'>
+      <div className='flex gap-6 overflow-hidden'>
       <TrendProduct productImage={puffedSleeve} productName='Shirt with puffed sleeves'/>
       <TrendProduct productImage={linenJumpsuit} productName='Linen jumpsuit'/>
       <TrendProduct productImage={formalSuit} productName='White formal suit'/>

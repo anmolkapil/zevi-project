@@ -12,13 +12,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ setSearching }) => {
 
   const navigate = useNavigate();
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => { // Specify the event type
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => { 
     event.preventDefault();
     // Navigate to the '/results' route with the search query as a query parameter
     navigate(`/results?query=${searchQuery}`);
   };
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => { // Specify the event type
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => { 
     setSearchQuery(event.target.value);
   };
 
