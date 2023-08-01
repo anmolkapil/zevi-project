@@ -21,7 +21,6 @@ const SearchResult:React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        // Fetch the products data from the JSON file
         const response = await fetch('/products.json');
         const data = await response.json();
         setFilteredProducts(data);
