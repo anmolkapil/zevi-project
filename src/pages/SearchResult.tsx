@@ -67,7 +67,7 @@ const SearchResult:React.FC = () => {
     <h1 className='text-4xl ml-10 mt-10'>Search Results</h1>
     <div className='flex justify-between p-10 gap-10'>
     
-    <div className='hidden md:block'>
+    <div className='hidden lg:block'>
     <Sidebar/>
     </div>
     
