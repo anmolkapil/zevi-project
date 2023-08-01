@@ -24,7 +24,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ setSearching }) => {
 
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
-      <div className='flex mt-8 drop-shadow-2xl px-6 py-3 mx-auto bg-white gap-4 justify-between rounded-xl w-3/5'>
+      <div className='flex mt-8 drop-shadow-2xl px-6 py-3 bg-white gap-4 justify-between rounded-xl mx-6 md:mx-auto md:w-3/5'>
         <input
           onBlur={() => setSearching(false)}
           onFocus={() => setSearching(true)}
