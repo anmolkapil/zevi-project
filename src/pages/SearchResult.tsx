@@ -50,7 +50,7 @@ const SearchResult:React.FC = () => {
     <Header/>
 
     <form onSubmit={(e) => handleSubmit(e)}>
-      <div className='flex px-6 py-3 mx-auto -mt-[60px] bg-white gap-4 border border-[rgba(0, 0, 0, 0.50)] justify-between rounded-xl w-[550px]'>
+      <div className='flex px-6 py-3 mx-6 md:mx-auto md:-mt-[60px] bg-white gap-4 border border-[rgba(0, 0, 0, 0.50)] justify-between rounded-xl md:w-[550px]'>
         <input
           onChange={(e) => handleInputChange(e)}
           className='w-full text-xl focus:outline-none'
@@ -67,8 +67,11 @@ const SearchResult:React.FC = () => {
     <h1 className='text-4xl ml-10 mt-10'>Search Results</h1>
     <div className='flex justify-between p-10 gap-10'>
     
+    <div className='hidden md:block'>
     <Sidebar/>
-    <div className='grid grid-cols-4 gap-[40px]'>
+    </div>
+    
+    <div className='w-full grid grid-cols-2 justify-center md:grid-cols-3 lg:grid-cols-4 gap-[40px]'>
     {Products.map((product, index) => (
         <Product
           key={index}

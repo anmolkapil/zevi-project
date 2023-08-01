@@ -30,7 +30,7 @@ return (
     </div>
 
     <div className='relative group rounded-sm overflow-hidden'>
-    <img className='w-[240px] h-[325px] object-cover' src={productImage} alt={productName}/>
+    <img className='aspect-[2/3] w-full object-cover' src={productImage} alt={productName}/>
    
     <div className='absolute invisible group-hover:visible bottom-0 left-0 right-0 bg-[rgba(109,132,255,0.7)] text-white font-medium text-xl text-center py-2'>View Product</div>
     </div>
