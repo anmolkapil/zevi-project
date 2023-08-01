@@ -8,7 +8,7 @@ const Search: React.FC = () => {
   const [searching, setSearching] = useState<boolean>(false);
 
   return (
-    <div style={{backgroundImage: `url(${backgroundImage})`}} className='h-screen bg-cover'>
+    <div style={{backgroundImage: `url(${backgroundImage})`}} className='h-screen bg-cover bg-center'>
       <Header/>
       <div className='flex flex-col'>
         <SearchBar setSearching={setSearching}/>
