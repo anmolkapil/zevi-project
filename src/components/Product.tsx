@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Rating} from '@mui/material';
+import Rating from '@mui/material/Rating';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
@@ -32,7 +32,7 @@ return (
     <div className='relative group'>
     <img src={productImage} alt={productName}/>
    
-    <div className='absolute visible group-hover:visible bottom-0 left-0 right-0 bg-[rgba(109,132,255,0.7)] text-white font-medium text-xl text-center py-2'>View Product</div>
+    <div className='absolute invisible group-hover:visible bottom-0 left-0 right-0 bg-[rgba(109,132,255,0.7)] text-white font-medium text-xl text-center py-2'>View Product</div>
     </div>
     <h2 className='text-xl mt-4 mb-2 font-normal'>{productName}</h2>
     <span className='line-through font-light text-black/40 mr-2'>Rs. {price}</span>
