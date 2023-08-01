@@ -33,7 +33,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ setSearching }) => {
           type="text"
           placeholder="Search"
         />
-        <img className='w-[25px] h-[25px]' src={searchIcon} alt='Search Icon' />
+        <button type='submit'>
+          <img className='w-[25px] h-[25px]' src={searchIcon} alt='Search Icon' />
+        </button>
       </div>
     </form>
   );
